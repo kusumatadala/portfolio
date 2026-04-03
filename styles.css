@@ -1,0 +1,339 @@
+/* ========================================
+   GLOBAL STYLES
+   ======================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9fafc;
+  color: #1e293b;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ========================================
+   NAVIGATION / HEADER
+   ======================================== */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #e9eef3;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 16px 24px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 1.5rem;
+  background: linear-gradient(135deg, #1e3c72, #2b4c7c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: -0.3px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #334155;
+  transition: color 0.2s;
+  font-size: 0.95rem;
+}
+
+.nav-links a:hover {
+  color: #1e4a76;
+}
+
+/* ========================================
+   SECTION STYLES
+   ======================================== */
+section {
+  padding: 60px 0;
+  border-bottom: 1px solid #eef2f6;
+}
+
+.section-title {
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+  position: relative;
+  display: inline-block;
+  letter-spacing: -0.02em;
+  background: linear-gradient(120deg, #1e293b, #2c3e66);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.section-title:after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: #2c5f8a;
+  border-radius: 4px;
+}
+
+/* ========================================
+   HERO SECTION
+   ======================================== */
+.hero {
+  padding: 64px 0 48px;
+  background: linear-gradient(145deg, #ffffff 0%, #f8fafd 100%);
+}
+
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-text h1 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  background: linear-gradient(to right, #0f2b3d, #2b5876);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 12px;
+}
+
+.hero-tagline {
+  font-size: 1.3rem;
+  color: #2c5f8a;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.hero-desc {
+  color: #475569;
+  max-width: 550px;
+  margin-bottom: 24px;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.contact-info a {
+  color: #1e3a5f;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.contact-info a:hover {
+  color: #0f2b40;
+}
+
+/* ========================================
+   BUTTONS
+   ======================================== */
+.btn-resume {
+  background: #1e3a5f;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 40px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.btn-resume:hover {
+  background: #0f2b40;
+  transform: translateY(-2px);
+}
+
+/* ========================================
+   CARDS
+   ======================================== */
+.exp-card, .project-card, .edu-card, .cert-card, .co-card {
+  background: white;
+  border-radius: 24px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.02), 0 1px 3px rgba(0,0,0,0.05);
+  transition: all 0.25s;
+  border: 1px solid #eef2f8;
+}
+
+.exp-card:hover, .project-card:hover {
+  box-shadow: 0 20px 25px -12px rgba(0,0,0,0.08);
+  border-color: #cbdde9;
+}
+
+/* ========================================
+   EXPERIENCE CARD
+   ======================================== */
+.exp-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 12px;
+}
+
+.exp-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #0c4a6e;
+}
+
+.exp-date {
+  font-size: 0.85rem;
+  background: #eef2ff;
+  padding: 4px 12px;
+  border-radius: 40px;
+  color: #1e4a76;
+  font-weight: 500;
+}
+
+.exp-sub {
+  font-weight: 600;
+  color: #2c5f8a;
+  margin: 12px 0 8px;
+  font-size: 1rem;
+}
+
+.exp-desc {
+  color: #334155;
+  margin-bottom: 10px;
+  padding-left: 6px;
+  border-left: 2px solid #b9d0e0;
+  margin-top: 6px;
+}
+
+/* ========================================
+   SKILLS
+   ======================================== */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.skill-badge {
+  background: #eef2ff;
+  padding: 6px 14px;
+  border-radius: 40px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #1e3a5f;
+}
+
+.skill-cat {
+  margin-bottom: 24px;
+}
+
+.skill-cat h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #1e2f44;
+}
+
+/* ========================================
+   GRIDS & LAYOUTS
+   ======================================== */
+.grid-2col {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+/* ========================================
+   ACHIEVEMENTS
+   ======================================== */
+.achievement-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.badge-achievement {
+  background: #f1f5f9;
+  padding: 8px 16px;
+  border-radius: 40px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* ========================================
+   FOOTER
+   ======================================== */
+footer {
+  text-align: center;
+  padding: 32px;
+  color: #5b6e8c;
+  font-size: 0.85rem;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2.3rem;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .exp-header {
+    flex-direction: column;
+    gap: 6px;
+  }
+}
